@@ -2,12 +2,12 @@
         jokes[1]="Why do I get so angry? Because people keep pushing my buttons!";
         jokes[2]="What is my favorite type of music? Heavy metal";
         jokes[3]="Why was I feeling bad? I had a virus";
-        jokes[4]="Why did I go to the mall? Because I had hardware and  software  but  needed  underwear  ";
-        jokes[5]="Why  was  I  so  tired  when  I  got  here?  I  had  a  hard  drive ";
-        jokes[6]="Why  did  I  cross  the  road?  I  was  programmed  by  a  chicken";
-        jokes[7]="Why  can’t  bad  programmers  drive  well?  They  can’t  C  sharp";
-        jokes[8]="Want  to  know  my  favorite  drink?  It’s  a  screwdriver";
-        jokes[9]="Want  to  know  my  favorite  dance?  It’s  the  robot";
+        jokes[4]="Why did I go to the mall? Because I had hardware and software but needed underwear";
+        jokes[5]="Why was I so tired when I got here? I had a hard drive";
+        jokes[6]="Why did I cross the road? I was programmed by a chicken";
+        jokes[7]="Why can’t bad programmers drive well? They can’t C sharp";
+        jokes[8]="Want to know my favorite drink? It’s a screwdriver";
+        jokes[9]="Want to know my favorite dance? It’s the robot";
 var speak = new Array( );
 
 
