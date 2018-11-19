@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/parking.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+    </div>
+    <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
+        
+          <div id="content_air"></div>
+          <div id="content_date" ></div>
+          <span id="condition"></span>
+        <div>
+            <img id ="image-zoom" style="width: 50px" src="">
+             <span id="temp" ></span>
+        </div>
+       
+    </span>
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
+    <!--<h2 class="lang-text">Choose a Language</h2>
+    <div class="nav-language">
+        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
+    </div>-->
+</nav>
+
+<section class="main-content">
+  <div class="bmg">
+    <div class="wrap">
+      <img src="images/map.png" width="1080">    
+    </div>
+  </div>
+
+</section>
+<footer>
+  <div class="col-sm-4"></div><div class="col-sm-8">The Robot is tapping into the powet of<img src="../../assets/icons/AWS_logo_RGB_WHT.png"></div>
+</footer>
+<div id="dialog-overlay"></div>
+      <div id="dialog-box">
+
+      </div>
+
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/parking.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+
+
+</html>

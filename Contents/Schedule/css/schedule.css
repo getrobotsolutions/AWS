@@ -1,0 +1,171 @@
+.nav{border: none;height: 105px;text-align: center;    padding: 0 10px;
+  background-image: linear-gradient(to right top, #7739a9, #9a43a4, #b451a0, #c9649e, #d9789f);
+  }
+  .nav-tabs>li>a{color: white;font-size: 40px;}
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: #57458a;color: white;border: none;
+  }
+  .bmg{
+
+    height: 1158px;
+}
+
+.home{
+    float: left;
+    height: 57px;
+    padding-right: 30px;
+
+}
+  .img-home {position: absolute;top: -60px;z-index: 99;height: 62px;cursor: pointer; cursor: hand;}
+  .wrap{    padding-top: 20px;}
+     .icon{
+      
+      width: 550px;
+      height: 380px;
+    }
+  #dialog-overlay {
+
+  /* set it to fill the whil screen */
+  width:100%; 
+  height:100%;
+  
+  /* transparency for different browsers */
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  -khtml-opacity: 0.5; 
+  opacity: 0.5; 
+  background:#000; 
+
+  /* make sure it appear behind the dialog box but above everything else */
+  position:absolute; 
+  top:0; left:0; 
+  z-index:3000; 
+
+  /* hide it by default */
+  display:none;
+}
+
+#dialog-box {
+  
+  /* css3 drop shadow */
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+  /* css3 border radius */
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  
+  background:#eee;
+  /* styling of the dialog box, i have a fixed dimension for this demo */ 
+  width:850px; 
+  
+  
+  /* make sure it has the highest z-index */
+  position:absolute; 
+  top: 20% !important;
+  z-index:5000; 
+
+  /* hide it by default */
+  display:none;
+}
+
+#dialog-box .dialog-content {
+  /* style the content */
+  max-height: 1200px;
+  overflow: hidden;
+  text-align:left; 
+  padding:10px; 
+  margin:0px;
+  border: 15px solid #8500c5;
+  color:#666; 
+  font-family:arial;
+  font-size:11px; 
+  float: left;
+}
+
+#dialog-message{
+      padding-right: 150px;
+    font-size: 15px;
+}
+a.button {
+  /* styles for button */
+  float: right;
+  margin:10px auto 0 auto;
+  text-align:center;
+  display: block;
+  width: 150px;
+  width:100px;
+  padding:  10px ;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+    font-size: 30px;
+  
+  /* button color */
+  background-color: #8500c5;
+  
+  /* css3 implementation :) */
+  /* rounded corner */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  /* drop shadow */
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  
+  /* text shaow */
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  position: relative;
+  cursor: pointer;
+  
+}
+
+a.button:hover {
+  /*background-color: #c33100;  */
+}
+
+/* extra styling */
+#dialog-box .dialog-content p {
+  font-weight:700; margin:0;
+}
+
+#dialog-box .dialog-content ul {
+  margin:10px 0 10px 20px; 
+  padding:0; 
+  height:50px;
+}
+
+#change-us{color: rgb(255, 255, 255);background: #008a97;padding: 0px 10px;border-radius: 5px;}
+
+p{
+  margin: 0 0 0;
+}
+.left-col{
+  background-image: linear-gradient(to right top, #4d3aca, #5539c5, #5b39c0, #6038bb, #6538b6);
+    height: 135px;
+    margin: 10px 0 20px 10px;
+    color: white;
+    font-size: 31px;
+    width: 49%;
+    padding-top: 42px;
+    text-align: left;
+}
+.right-col{
+  background-color: #423571e0;
+  padding-top: 10px;
+  height: 135px;
+  margin: 10px 0 20px 10px;
+  color:white;
+  font-size: 28px;
+   width: 49%;
+  padding-right: 30px;
+}
+.right-col img{
+  float: right;
+  width: 50px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

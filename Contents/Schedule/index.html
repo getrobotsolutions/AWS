@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/schedule.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png" onmousedown ="return false">
+    </div>
+    
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
+    <!--<h2 class="lang-text">Choose a Language</h2>
+    <div class="nav-language">
+        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
+    </div>-->
+</nav>
+
+<section class="main-content">
+  <div class="bmg">
+    <div class="wrap">
+      
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="active" style=""><a id="txt01" data-target="#mon" data-toggle="tab">Mon 11/26</a></li>
+        <li class="" style=""><a id="txt02" data-target="#i02" data-toggle="tab">Tue 11/26</a></li>
+        <li class="" style=""><a id="txt03" data-target="#i03" data-toggle="tab">Wed 11/26</a></li>
+        <li class="" style=""><a id="txt04" data-target="#i04" data-toggle="tab">Thu 11/26</a></li>
+        <li class="" style=""><a id="txt05" data-target="#i05" data-toggle="tab">Fri 11/26</a></li> 
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" style="text-align: center" id="mon">
+          <div class="col-sm-6 left-col">10:45–11:45AM:Session Title </div>
+          <div class="col-sm-6 right-col">Announcing AWS RoboMaker: A New Cloud Robotics Service, Venetian – Titian 2205<img src="../../assets/icons/info.png" dir="1"></div>
+
+          <div class="col-sm-6 left-col">10AM - 12:15PM : Workshop Title: </div>
+          <div class="col-sm-6 right-col">Use AWS RoboMaker to Develop a Robot Application to Track and Find Fido, Venetian, Level 2, Venetian H<img src="../../assets/icons/info.png" dir="2"></div>
+          
+          <div class="col-sm-6 left-col">10AM-12.5PM: Title</div>
+          <div class="col-sm-6 right-col">Hands-on Wrokshop#1:Venetian, Level 2, Venetian HMon 11/26
+            <img src="../../assets/icons/info.png" dir=""></div>
+        </div>
+                        <div class="tab-pane" style="text-align: center" id="i02">
+                          
+                        </div>
+                        <div class="tab-pane" style="text-align: center" id="i03">
+                         
+                        </div>
+                        <div class="tab-pane" style="text-align: center" id="i04">
+                          
+                        </div>
+                        <div class="tab-pane" style="text-align: center" id="i05">
+                          
+                        </div>
+                        <div class="tab-pane" style="text-align: center" id="i06">
+                          
+                        </div>
+                        <div class="tab-pane" style="text-align: center" id="i07">
+                          
+                        </div>
+
+                        
+                      </div>
+      
+    </div>
+  </div>
+
+</section>
+
+
+<footer>
+<div class="col-sm-4"></div><div class="col-sm-8">The Robot is tapping into the powet of<img src="../../assets/icons/AWS_logo_RGB_WHT.png"></div>
+
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+</div>
+
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/schedule.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    //window.history.forward();
+</script>
+
+
+
+</html>

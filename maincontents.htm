@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     
+    </style>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+<header>
+    <div class="logo">
+        <img onclick="FC_ContentsCall('maincontents')" src="assets/logo.png">
+    </div>
+
+</header>
+
+<nav>
+
+</nav>
+
+<section class="main-content" style="height: 61%">
+  <div class="subheader">
+    <div class="col-md-2">
+        <img src="assets/icons/microphone.png">
+    </div>
+    <div class="col-md-10" style="border: 4px solid white;height: 70px;">Who are you? What do you do? </div>
+    
+  </div>
+    <div class="main-menu-matrix">
+      
+        <table>
+          <tr>
+            <td>
+              <button onclick="FC_ContentsCall('Van-Vilet')" class="r0c1" style="background-image: url(assets/icons/robomaker.png);">
+                    <img src="assets/icons/AWS-robomaker.png" style=""> 
+                    <a id="txt_shopping" style="">Learn More <strong>About AWS RoboMaker</strong></a>
+                  </button>
+              
+            </td>
+            <td>
+              <button onclick="FC_ContentsCall('Schedule')" class="r0c1" style="background-image: url(assets/icons/icon-bg-3.png)">
+                <img src="assets/icons/schedule-icon.png" style="">
+                <a id="txt_shopping">AWS RoboMaker Schedule</a>
+              </button>
+            
+            </tr>
+            
+            <tr>
+                <td>
+                  <button onclick="FC_ContentsCall('Maps')"  class="r0c1" style="background-image: url(assets/icons/icon-bg-2.png);">
+                    <img src="assets/icons/map.png" style="">
+                    <a id="txt_shopping"><br> re:Invent  Maps</a>
+                  </button>
+                </td>
+                <td>
+                    <button onclick="FC_ContentsCall('Entertainment')" class="r0c2" style="background-image: url(assets/icons/icon-bg-3.png)">
+                        <img src="assets/icons/slot-machine-with-sevens.png" style="">
+                        <a id="txt_robot_avatar"><br>Entertainment</a></br>
+                    </button>
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="FC_ContentsCall('Videos')" style="background-image: url(assets/icons/icon-bg-2.png)" class="icons-2">
+                        <img src="assets/icons/video-camera.png"> 
+                        <a id="txt_shopping">ARS Videos</a>
+                    </button>
+                </td>
+                <td>
+                    <button onclick="" style="background-image: url(assets/icons/4.jpeg)" class="icons-2">
+                        
+                        <a id="txt_robot_avatar">Rent or Buy me</a>
+                    </button>
+                </td>
+                
+                
+            </tr>
+        </table>
+    </div>
+
+</section>
+
+<footer>
+  <div class="col-sm-4"></div><div class="col-sm-8">The Robot is tapping into the powet of<img src="assets/icons/AWS_logo_RGB_WHT.png"></div>
+
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+
+</div>
+
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+    /*function redirectToSS(){
+        window.location.href = "maincontents.htm";
+    }
+    var tempTime=setTimeout(redirectToSS,60000);
+
+    $(document).click(function(event) {
+        clearTimeout( tempTime );
+        tempTime=setTimeout(redirectToSS,240000);
+    });*/
+</script>
+
+</body>
+</html>
