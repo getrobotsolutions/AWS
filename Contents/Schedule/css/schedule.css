@@ -1,7 +1,7 @@
 .nav{border: none;height: 105px;text-align: center;    padding: 0 10px;
   background-image: linear-gradient(to right top, #7739a9, #9a43a4, #b451a0, #c9649e, #d9789f);
   }
-  .nav-tabs>li>a{color: white;font-size: 40px;}
+  .nav-tabs>li>a{color: white;font-size: 38px;}
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
     background-color: #57458a;color: white;border: none;
   }
