@@ -16,7 +16,8 @@ $(document).click(function(event) {
 
 $(document).ready(function(){
   
-   $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {   
+   $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {  
+      $('#dialog-content1').empty();   
       $('#dialog-overlay1, #dialog-box1').hide();   
       return false;
     });
