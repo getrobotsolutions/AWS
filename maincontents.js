@@ -36,9 +36,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
         case "Home":
            location.href = "../../maincontents.htm";
             break;
-        case "HFV":
+        case "LearnMore":
             //PlaySpeech(speak[0]);
-            location.href = "Contents/HFV/index.html";
+            location.href = "Contents/LearnMore/index.html";
             break;
         case "Schedule":
             //PlaySpeech(speak[1]);
@@ -60,9 +60,13 @@ function FC_ContentsCall(strContentsName, strLanguage)
             //PlaySpeech(speak[4]);
             location.href = "Contents/Entertainment/index.html";
             break;
-        case "Group-Imaging":
+        case "RentAndBuy":
             //PlaySpeech(speak[5]);
-            location.href = "Contents/Group-Imaging/index.html";
+            location.href = "Contents/RentAndBuy/index.html";
+            break;
+        case "RentAndBuy_inner":
+            //PlaySpeech(speak[5]);
+            location.href = "../../Contents/RentAndBuy/index.html";
             break;
         
 

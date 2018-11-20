@@ -32,15 +32,17 @@
 </header>
 
 <nav>
-    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" >Home</span>
-    <!--<h2 class="lang-text">Choose a Language</h2>
-    <div class="nav-language">
-        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
-        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
-    </div>-->
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
 </nav>
 
 <section class="main-content">
+  <div class="subheader">
+        <div class="col-md-2">
+            <img src="../../assets/icons/microphone.png">
+        </div>
+        <div class="col-md-10" style="border: 4px solid white;height: 70px;">Who are you? What do you do? </div>   
+    </div>
+
   <div class="bmg">
     <div class="wrap">
       
@@ -56,37 +58,35 @@
         <div class="tab-pane active" style="text-align: center" id="mon">
           <div class="col-sm-6 left-col">Workshop: Use AWS RoboMaker to Develop a Robot Application to Track and Find Fido</div>
           <div class="col-sm-6 right-col">10AM - 12:15PM : Venetian, Level 2, Venetia<img src="../../assets/icons/info.png" dir="1"></div>
+
           <div class="col-sm-6 left-col">Session: Announcing AWS RoboMaker: A New Cloud Robotics Service </div>
           <div class="col-sm-6 right-col">10:45–11:45AM:A New Cloud Robotics Service-Venetian – Titian 2205<img src="../../assets/icons/info.png" dir="2"></div>
 
-          
-          
           <div class="col-sm-6 left-col">Online Event: AWS RoboMaker "Ask the Expert" on Reddit</div>
-          <div class="col-sm-6 right-col">2PM–3PM:</br>
-  http://reddit.com/r/aws
+          <div class="col-sm-6 right-col">2PM–3PM:</br>http://reddit.com/r/aws
             <img src="../../assets/icons/info.png" dir="3"></div>
         </div>
-                        <div class="tab-pane" style="text-align: center" id="i02">
+        <div class="tab-pane" style="text-align: center" id="i02">
                           
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i03">
+        </div>
+        <div class="tab-pane" style="text-align: center" id="i03">
                          
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i04">
+        </div>
+        <div class="tab-pane" style="text-align: center" id="i04">
                           
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i05">
+        </div>
+        <div class="tab-pane" style="text-align: center" id="i05">
                           
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i06">
+        </div>
+        <div class="tab-pane" style="text-align: center" id="i06">
                           
-                        </div>
-                        <div class="tab-pane" style="text-align: center" id="i07">
+        </div>
+        <div class="tab-pane" style="text-align: center" id="i07">
                           
-                        </div>
+        </div>
 
                         
-                      </div>
+      </div>
       
     </div>
   </div>
@@ -95,7 +95,7 @@
 
 
 <footer>
-<div class="col-sm-4"></div><div class="col-sm-8">The Robot is tapping into the powet of<img src="../../assets/icons/AWS_logo_RGB_WHT.png"></div>
+<div class="col-sm-4"></div><div class="col-sm-8">The Robot is tapping into the power of<img src="../../assets/icons/AWS_logo_RGB_WHT.png"></div>
 
 </footer>
 <div id="dialog-overlay"></div>
@@ -104,14 +104,7 @@
 
 </body>
 <script type="application/javascript">
-    if(readCookie("CurrentLanguage") === "English")
-    {
-        LanguageChange('english');
-    }
-    else if(readCookie("CurrentLanguage") === "Spanish")
-    {
-        LanguageChange('spanish');
-    }
+   
 </script>
 
 <script language="JavaScript" type="text/javascript" src="js/schedule.js"></script>

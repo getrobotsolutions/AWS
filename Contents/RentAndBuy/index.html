@@ -33,7 +33,11 @@
 
 <nav>
     <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
-    
+    <!--<h2 class="lang-text">Choose a Language</h2>
+    <div class="nav-language">
+        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
+    </div>-->
 </nav>
 
 <section class="main-content">
@@ -44,56 +48,37 @@
         <div class="col-md-10" style="border: 4px solid white;height: 70px;">Who are you? What do you do? </div>   
     </div>
   <div class="bmg">
+    <h2 class="sub-title">SCAN A QR CODE TO LEARN MORE</h2>
     <div class="wrap">
       
-         <div class="main-menu-matrix">
+        <div class="main-menu-matrix">
       
         <table>
           <tr>
             <td>
-              <button onclick="GetJoke()" style="background-image: url(../../assets/icons/robomaker.png);">
-                    <img src="../../assets/icons/jokes.png" style=""> 
-                    <a style=""><br>Jokes</a>
+              <button onclick="" style="background-image: url(../../assets/icons/robomaker.png);">
+                    <img src="images/QR_Code_ARS_Contact_Us.png" style="">
+                    <a style="">ARS Website</a>
                   </button>
               
             </td>
             <td>
-              <button onclick="FC_ContentsCall('Slot-machine')" style="background-image: url(../../assets/icons/icon-bg-3.png)">
-                <img src="../../assets/icons/slot-machine-with-sevens.png" style="">
-                <a ><br>Slot Machine</a>
+              <button onclick="" style="background-image: url(../../assets/icons/icon-bg-3.png)">
+                <img src="images/QR_Code_ARS_Contact_Information.png" style="">
+                <a >Our Contact Info</a>
               </button>
             
-            </tr>
+        </tr>
             
+           
             <tr>
                 <td>
-                  <button onclick="FC_ContentsCall('Dance')" style="background-image: url(../../assets/icons/icon-bg-2.png);">
-                    <img src="../../assets/icons/dance.png" style="">
-                    <a><br>Dance</a>
-                  </button>
-                </td>
-                <td>
-                    <button onclick="FC_ContentsCall('Avatar')" style="background-image: url(../../assets/icons/icon-bg-3.png)">
-                        <img src="../../assets/icons/robot-5.png" style="">
-                        <a ><br>Robot Avatar</a></br>
-                    </button>
-                </td>
-                
-                
-            </tr>
-            <tr>
-                <td>
-                    <button onclick="FC_ContentsCall('Videos-inner')" style="background-image: url(../../assets/icons/icon-bg-2.png)" class="icons-2">
-                        <img src="../../assets/icons/video-camera.png"> 
+                    <button onclick="FC_ContentsCall('Videos-inner')" style="background-image: url(../../assets/icons/icon-bg-2.png);padding-top: 5px;" class="icons-2">
+                        <img style="float: left;" src="../../assets/icons/video-camera.png"> 
                         <a id="txt_shopping">ARS Videos</a>
                     </button>
                 </td>
-                <td>
-                    <button onclick="FC_ContentsCall('')" style="background-image: url(../../assets/icons/4.jpeg)" class="icons-2">
-                        
-                        <a id="txt_robot_avatar">Rent or Buy me</a>
-                    </button>
-                </td>
+                
                 
                 
             </tr>
@@ -109,8 +94,9 @@
 
 </footer>
 
-<div id="dialog-overlay"></div>
-      <div id="dialog-box">
+<div id="dialog-overlay1"></div>
+      <div id="dialog-box1"><a class="btn-ok">Close</a>
+        <div id="dialog-content1"></div>
 
       </div>
 
