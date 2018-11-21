@@ -31,8 +31,8 @@ function ShowPopup(src){
   var maskWidth = $(window).width();
   
   // calculate the values for center alignment
-var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
-var dialogLeft = (maskWidth/2) - ($('#dialog-box1').width()/2); 
+  var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
+  var dialogLeft = (maskWidth/2) - ($('#dialog-box1').width()/2); 
   
   // assign values to the overlay and dialog box
   $('#dialog-overlay1').css({height:maskHeight, width:maskWidth}).show();

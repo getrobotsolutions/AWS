@@ -40,16 +40,9 @@ $(document).ready(function(){
       return false;
     });
 
-  $("#btn").click(function () {
-    ShowPopup($("#btn").attr('dir'));
 
-    //$("$list1").show();
-
-  });
-  $("#mapBtn").click(function () {
-    ShowPopup($("#mapBtn").attr('dir'));
-
-    //$("$list1").show();
+  $(".map-btn").click(function () {
+    location.href="../../Contents/Maps/index.html";
 
   });
   $(".right-col img").click(function(){
