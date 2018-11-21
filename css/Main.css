@@ -123,6 +123,10 @@ nav .nav-language button {
     line-height: 49px;
     margin-top: 10px;
 }
+a:hover, a:active, a:visited, a:focus{
+	text-decoration: none;
+}
+
 
 .main-menu-matrix table button img {
 	width: 220px;

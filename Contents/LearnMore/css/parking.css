@@ -1,3 +1,6 @@
+a:hover, a:active, a:visited, a:focus{
+  text-decoration: none;
+}
 .bmg{
 
     height: 1158px;

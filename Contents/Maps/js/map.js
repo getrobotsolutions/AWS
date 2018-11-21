@@ -37,40 +37,16 @@ function LanguageChange(lang)
 location.reload();
 }
 
-
-
-
-
-
 $(document).ready(function(){
-  $('#hourly-garage').click(function(){
-    $('.hourly-garage').show();
-    $('.valet,.express-parking,.daily-garage,.long-term-parking,.cell-phone-lot').hide();
-  });
-  $('#valet').click(function(){
-    $('.valet').show();
-    $('.hourly-garage,.express-parking,.daily-garage,.long-term-parking,.cell-phone-lot').hide();
-  });
-  $('#express-parking').click(function(){
-    $('.express-parking').show();
-    $('.hourly-garage,.valet,.daily-garage,.long-term-parking,.cell-phone-lot').hide();
-  });
-  $('#daily-garage').click(function(){
-    $('.daily-garage').show();
-    $('.hourly-garage,.valet,.express-parking,.long-term-parking,.cell-phone-lot').hide();
-  });
-  $('#long-term-parking').click(function(){
-    $('.long-term-parking').show();
-    $('.hourly-garage,.valet,.express-parking,.daily-garage,.cell-phone-lot ').hide();
-  });
-  $('#cell-phone-lot').click(function(){
-    $('.cell-phone-lot').show();
-    $('.hourly-garage,.valet,.express-parking,.daily-garage,.long-term-parking ').hide();
-  });
-  
+  /*$('map area').click(function(){
+    var t=$(this).attr('title');
+    alert(t);
+  });*/
 
    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {   
-      $('#dialog-overlay, #dialog-box').hide();   
+      $('#dialog-overlay, #dialog-box').hide();  
+      //$("#dialog-message").empty();
+      $("#aria-content, #vdara-content, #aria-content, #bellagio-content, #mirage-content").hide()
       return false;
     });
 
@@ -97,25 +73,19 @@ function ShowPopup(src){
   var maskWidth = $(window).width();
   
   // calculate the values for center alignment
-var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
-var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
+  var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());  
+  var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
   
   // assign values to the overlay and dialog box
   $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
   $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
   
-  if (src=="") {
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="images/offers/404.png"/></div></div>';
-  }
-  else{
-    if(readCookie("CurrentLanguage") === "English")
-      PlaySpeech("Please take a picture with your phone and show Merchant for your special offer.");
-    else if(readCookie("CurrentLanguage") === "Spanish")
-      PlaySpeech("Por favor, tome una foto con su teléfono y muestre al comerciante su oferta especial.");
+
+  //document.getElementById('dialog-box').innerHTML = '<p style="width:  70%;display:  block;float:  left;font-size: 29px;padding: 20px;">Take Picture and Show merchant</p><a href="#" class="button" style="float: left;position:  relative;top: 20px;">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
   
-  document.getElementById('dialog-box').innerHTML = '<p style="width:  70%;display:  block;float:  left;font-size: 29px;padding: 20px;">Take Picture and Show merchant</p><a href="#" class="button" style="float: left;position:  relative;top: 20px;">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
-  //$("#dialog-box").append('<div class="dialog-content"><div id="dialog-message">'+ message +'</div><a href="#" class="button">Close</a></div>');
-    }
+  //$("#"+src).appendTo('#dialog-message');
+  $("#dialog-message #"+src).show();
+    
 }
 
 function ShowPopupARS(src){

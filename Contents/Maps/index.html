@@ -46,34 +46,220 @@
   <div class="bmg">
     <div class="wrap">
       <!--<img src="images/map.png" width="1080"> -->   
-      <img src="images/map.png" usemap="#image-map" width="1080">
+      <img src="images/map.png" usemap="#image-map" width="1080" oncontextmenu="return false;">
 
 <map name="image-map">
-    <area target="" alt="park_mgm" title="park_mgm" href="#" coords="277,384,308,396,311,423,250,433,213,397,175,379,175,273,257,272,270,314,311,318,318,375,267,368" shape="poly" onclick="">
-    <area target="" alt="aria" title="aria" href="#" coords="493,471,472,514,382,515,386,414,369,378,350,376,354,307,355,256,345,144,392,140,435,142,426,195,540,196,538,232,538,288,538,332,538,402,486,402,474,414,518,419" shape="poly">
-    <area target="" alt="vdara" title="vdara" href="#" coords="637,59,759,59,761,117,747,129,755,169,754,224,733,237,698,247,672,188,691,157,691,127,637,120" shape="poly">
-    <area target="" alt="belliago" title="belliago" href="#" coords="820,188,952,188,1003,186,1020,305,1025,366,1003,402,988,434,1000,485,1017,512,944,510,884,510,859,500,866,458,871,415,822,420,817,332,810,276,788,269,789,208,817,207" shape="poly">
-    <area target="" alt="mirage" title="mirage" href="#" coords="1268,147,1308,146,1337,163,1352,157,1429,196,1420,210,1442,242,1453,285,1478,286,1478,356,1458,356,1458,376,1446,446,1378,451,1378,514,1329,517,1239,463,1241,439,1237,415,1227,375,1273,336,1271,324" shape="poly">
-    <area target="" alt="treasure_island" title="treasure_island" href="" coords="1537,487,1587,444,1598,453,1648,454,1661,464,1659,688,1648,697,1507,615,1532,595,1537,561,1570,520,1537,515" shape="poly">
-    <area target="" alt="cosmopolitian" title="cosmopolitian" href="#" coords="667,293,767,293,772,451,742,451,745,464,752,510,667,509" shape="poly">
-    <area target="" alt="mgm_grand" title="mgm_grand" href="" coords="104,590,180,588,306,590,318,887,260,889,257,858,213,856,209,894,196,895,191,860,113,860,121,812,101,792,119,712,118,661,101,660" shape="poly">
-    <area target="" alt="mgm" title="mgm" href="#" coords="323,946,357,963,387,962,423,951,465,975,487,975,503,965,521,946,576,1001,552,1019,542,1053,386,1057,367,1024,328,1006,304,975" shape="poly">
-    <area target="" alt="linq" title="linq" href="#" coords="1101,629,1183,627,1203,721,1195,867,1096,865" shape="poly">
-    <area target="" alt="harrahs" title="harrahs" href="" coords="1230,638,1305,636,1300,853,1230,858" shape="poly">
-    <area target="" alt="venetian" title="venetian" href="#" coords="1354,646,1373,638,1397,673,1412,675,1424,648,1434,670,1493,710,1559,748,1566,778,1554,797,1464,833,1449,855,1444,890,1386,887,1368,870,1369,838,1346,836,1349,733,1329,731,1330,673" shape="poly">
-    <area target="" alt="encore" title="encore" href="#" coords="1659,895,1661,872,1632,850,1663,799,1682,802,1671,845,1690,867,1717,867,1749,848,1743,892,1782,885,1826,895,1805,934,1853,909,1892,938,1888,965,1851,1007,1839,1063,1814,1063,1797,1074,1682,1023,1532,955,1549,894,1600,900,1639,907" shape="poly">
+    <area target="" alt="PARK MGM" title="PARK MGM" href="#" coords="97,150,145,150,144,166,152,174,174,177,174,196,181,206,168,210,157,203,157,217,175,221,176,240,139,240,99,212" shape="poly">
+    <area onclick="ShowPopup('aria-content')" target="" alt="ARIA" title="ARIA" href="#" coords="193,76,241,75,249,68,253,76,245,89,241,106,306,108,307,184,314,192,303,198,303,227,269,228,266,233,293,232,281,261,274,261,269,290,261,299,241,297,210,292,212,232,200,231,200,209,193,211,193,176,204,175,202,144,191,137,196,116,189,95" shape="poly">
+    <area target="" onclick="ShowPopup('vdara-content')" alt="VDARA" title="VDARA" href="#" coords="357,33,429,34,428,67,422,74,428,94,428,132,420,138,396,141,385,139,390,122,377,106,386,92,389,70,357,71" shape="poly">
+    <area target="" alt="COSMOPOLITIAN" title="COSMOPOLITIAN" href="#" coords="374,165,419,166,426,167,432,168,434,254,417,254,417,260,421,289,377,290" shape="poly">
+    <area onclick="ShowPopup('bellagio-content')" target="" alt="BELLAGIO" title="BELLAGIO" href="#" coords="493,99,506,99,509,106,565,106,577,169,578,206,562,198,559,218,572,230,556,234,559,265,573,290,479,287,477,274,487,258,490,240,458,238,457,190,456,157,440,154,445,118,473,106,492,108" shape="poly">
+    <area target="" alt="MIRAGE" onclick="ShowPopup('mirage-content')" title="MIRAGE" href="#" coords="712,83,733,82,751,92,757,86,802,112,797,118,810,134,816,150,818,161,829,162,829,201,816,202,814,215,812,253,775,250,775,291,743,290,695,261,698,248,691,232,690,213,712,189" shape="poly">
+    <area target="" alt="TREASURE ISLAND" title="TREASURE ISLAND" href="#" coords="866,273,895,246,933,262,937,387,929,393,844,347,855,340,869,341,865,330,865,314,886,296,865,293" shape="poly">
+    <area target="" alt="MGM GRAND" title="MGM GRAND" href="#" coords="177,350,181,403,175,406,178,499,141,498,143,485,119,482,119,501,112,505,109,484,88,481,71,491,58,481,69,467,73,459,69,451,57,453,57,446,68,442,69,428,62,426,65,372,59,369,58,350,59,330,101,330,100,338,141,337,172,336" shape="poly">
+    <area target="" alt="SIGNATURE AT MGM" title="SIGNATURE AT MGM" href="#" coords="183,533,199,542,209,538,243,534,262,553,272,546,287,551,280,543,295,533,313,547,323,563,312,576,306,594,223,597,211,585,201,575,181,567,171,545" shape="poly">
+    <area target="" alt="LINQ" title="LINQ" href="#" coords="614,355,616,485,672,485,678,447,676,402,672,385,663,352" shape="poly">
+    <area target="" alt="HARRAH'S" title="HARRAH'S" href="#" coords="693,362,697,355,720,354,734,362,737,373,735,462,729,465,726,482,691,481" shape="poly">
+    <area target="" alt="VENETIAN" title="VENETIAN" href="#" coords="748,368,763,362,766,356,781,357,785,378,794,377,800,363,802,375,897,427,882,438,875,449,825,468,815,483,815,502,773,502,765,493,755,471,757,414,749,408" shape="poly">
+    <area target="" alt="WYNN" title="WYNN" href="#" coords="861,535,874,498,893,504,916,509,935,508,933,499,919,484,940,447,947,448,941,476,954,466,973,474,1010,490,1028,503,1015,525,1005,541,996,553,961,537,950,539,933,569" shape="poly">
+    <area target="" alt="ENCORE" title="ENCORE" href="#" coords="937,567,948,541,957,544,961,541,998,557,1005,544,1013,545,1023,530,1045,510,1062,528,1059,538,1068,544,1047,563,1033,602,1022,597,1019,603,1012,604,958,582,948,582,945,571" shape="poly">
 </map>
     </div>
   </div>
 
 </section>
+
 <footer>
   <div class="col-sm-4"></div><div class="col-sm-8">The Robot is tapping into the power of<img src="../../assets/icons/AWS_logo_RGB_WHT.png"></div>
 </footer>
 <div id="dialog-overlay"></div>
-      <div id="dialog-box">
+<div id="dialog-box">
+    <div class="dialog-content">
+        <a href="#" class="button">Close</a>
+        <div id="dialog-message">
+            <div class="" id="aria-content" style="display:none;">
+                <h1>ARIA</h1>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>Conference Services</li>
+                        <li>Campus Shuttle</li>
+                        <li>Information Desk</li>
+                        <li>Meals</li>
+                        <li>Mother's Room</li>
+                        <li>Reflection Room</li>
+                        <li>Registration & Help Desk</li>
+                    </ul>       
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>The Quad</li>
+                        <li>AWS Marketplace</li>
+                        <li>Builders Fair</li>
+                        <li>Startup Central</li>
+                        <li>Welcome Reception</li>
+                    </ul>
 
-      </div>
+                    <ul>
+                        <li>Breakout Content</li>
+                        <li>Breakout Overflows</li>
+                        <li>Builders Sessions</li>
+                        <li>Chalk Talks</li>
+                        <li>Sessions</li>
+                        <li>Workshops</li>
+                    </ul>
+
+                    <ul>
+                        <li>Conference Programs</li>
+                        <li>Bookable Meeting Space</li>
+                        <li>Certification Lounge</li>
+                        <li>EBCs</li>
+                        <li>EBC Expert Meetings</li>
+                        <li>Pub Crawl</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/aria.jpg" width="400">
+                </div>
+            </div>
+
+            <div class="" id="vdara-content" style="display:none;">
+                <h1>VDARA</h1>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>Conference Services</li>
+                        <li>Campus Shuttle</li>
+                        <li>Information Desk</li>
+                        <li>Meals</li>
+                        <li>Mother's Room</li>
+                        <li>Reflection Room</li>
+                        <li>Registration & Help Desk</li>
+                    </ul>       
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>The Quad</li>
+                        <li>AWS Marketplace</li>
+                        <li>Builders Fair</li>
+                        <li>Startup Central</li>
+                        <li>Welcome Reception</li>
+                    </ul>
+
+                    <ul>
+                        <li>Breakout Content</li>
+                        <li>Breakout Overflows</li>
+                        <li>Builders Sessions</li>
+                        <li>Chalk Talks</li>
+                        <li>Sessions</li>
+                        <li>Workshops</li>
+                    </ul>
+
+                    <ul>
+                        <li>Conference Programs</li>
+                        <li>Bookable Meeting Space</li>
+                        <li>Certification Lounge</li>
+                        <li>EBCs</li>
+                        <li>EBC Expert Meetings</li>
+                        <li>Pub Crawl</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/aria.jpg" width="400">
+                </div>
+            </div>
+
+            <div class="" id="bellagio-content" style="display:none;">
+                <h1>BELLAGIO</h1>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>Conference Services</li>
+                        <li>Campus Shuttle</li>
+                        <li>Information Desk</li>
+                        <li>Meals</li>
+                        <li>Mother's Room</li>
+                        <li>Reflection Room</li>
+                        <li>Registration & Help Desk</li>
+                    </ul>       
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>The Quad</li>
+                        <li>AWS Marketplace</li>
+                        <li>Builders Fair</li>
+                        <li>Startup Central</li>
+                        <li>Welcome Reception</li>
+                    </ul>
+
+                    <ul>
+                        <li>Breakout Content</li>
+                        <li>Breakout Overflows</li>
+                        <li>Builders Sessions</li>
+                        <li>Chalk Talks</li>
+                        <li>Sessions</li>
+                        <li>Workshops</li>
+                    </ul>
+
+                    <ul>
+                        <li>Conference Programs</li>
+                        <li>Bookable Meeting Space</li>
+                        <li>Certification Lounge</li>
+                        <li>EBCs</li>
+                        <li>EBC Expert Meetings</li>
+                        <li>Pub Crawl</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/aria.jpg" width="400">
+                </div>
+            </div>
+
+            <div class="" id="mirage-content" style="display:none;">
+                <h1>MIRAGE</h1>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>Conference Services</li>
+                        <li>Campus Shuttle</li>
+                        <li>Information Desk</li>
+                        <li>Meals</li>
+                        <li>Mother's Room</li>
+                        <li>Reflection Room</li>
+                        <li>Registration & Help Desk</li>
+                    </ul>       
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li>The Quad</li>
+                        <li>AWS Marketplace</li>
+                        <li>Builders Fair</li>
+                        <li>Startup Central</li>
+                        <li>Welcome Reception</li>
+                    </ul>
+
+                    <ul>
+                        <li>Breakout Content</li>
+                        <li>Breakout Overflows</li>
+                        <li>Builders Sessions</li>
+                        <li>Chalk Talks</li>
+                        <li>Sessions</li>
+                        <li>Workshops</li>
+                    </ul>
+
+                    <ul>
+                        <li>Conference Programs</li>
+                        <li>Bookable Meeting Space</li>
+                        <li>Certification Lounge</li>
+                        <li>EBCs</li>
+                        <li>EBC Expert Meetings</li>
+                        <li>Pub Crawl</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/aria.jpg" width="400">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 </body>
 <script type="application/javascript">
