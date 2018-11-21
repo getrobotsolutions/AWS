@@ -39,7 +39,7 @@ var dialogLeft = (maskWidth/2) - ($('#dialog-box1').width()/2);
   $('#dialog-box1').css({top:dialogTop, left:dialogLeft}).show();
   
   
-    document.getElementById('dialog-content1').innerHTML = '<div id="dialog-message"><video width="800" height="540" controls><source src="'+src+'" type="video/mp4">Your browser does not support the video tag.</video>" </div>';
+    document.getElementById('dialog-content1').innerHTML = '<div id="dialog-message"><video width="800" height="540" autoplay><source src="'+src+'" type="video/mp4">Your browser does not support the video tag.</video>" </div>';
   
   }
 
