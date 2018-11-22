@@ -46,7 +46,7 @@ $(document).ready(function(){
    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {   
       $('#dialog-overlay, #dialog-box').hide();  
       //$("#dialog-message").empty();
-      $("#aria-content, #vdara-content, #aria-content, #bellagio-content, #mirage-content").hide()
+      $("#aria-content, #vdara-content, #aria-content, #bellagio-content, #mirage-content, #mgm_grand-content, #venetian-content, #encore-content").hide()
       return false;
     });
 

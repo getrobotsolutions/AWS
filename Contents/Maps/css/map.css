@@ -137,7 +137,11 @@ a.button:hover {
 #dialog-box .dialog-content ul {
   margin:10px 0 10px 20px; 
   padding:0; 
-  height:85px;
+  height:auto;
+  list-style-type: none;
+}
+#dialog-box .dialog-content ul li p{
+  color: #d232d2;
 }
 
 #change-us{color: rgb(255, 255, 255);background: #008a97;padding: 0px 10px;border-radius: 5px;}
