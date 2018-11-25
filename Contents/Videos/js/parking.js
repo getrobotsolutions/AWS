@@ -17,12 +17,28 @@ $(document).click(function(event) {
 $(document).ready(function(){
   
    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {  
-      $('#dialog-content1').empty();   
+      var video = document.getElementById("myVideo");  
+      video.pause(); 
       $('#dialog-overlay1, #dialog-box1').hide();   
       return false;
     });
+   var videostate="play";
+   
 
 });
+function vidplay() {
+       var video = document.getElementById("myVideo");
+       var button = document.getElementById("playPause");
+       if (video.paused) {
+          video.play();
+          //button.textContent = "||";
+          button.src="images/pause.png";
+       } else {
+          video.pause();
+          //button.textContent = ">";
+          button.src="images/play.png";
+       }
+    }
 
 function ShowPopup(src){
 
@@ -37,9 +53,9 @@ function ShowPopup(src){
   // assign values to the overlay and dialog box
   $('#dialog-overlay1').css({height:maskHeight, width:maskWidth}).show();
   $('#dialog-box1').css({top:dialogTop, left:dialogLeft}).show();
-  
-  
-    document.getElementById('dialog-content1').innerHTML = '<div id="dialog-message"><video width="800" height="540" autoplay><source src="'+src+'" type="video/mp4">Your browser does not support the video tag.</video>" </div>';
+  document.getElementById('myVideo').setAttribute('src', src);
+    
+    //document.getElementById('dialog-content1').innerHTML = '';
   
   }
 

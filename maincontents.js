@@ -11,9 +11,9 @@
 var speak = new Array( );
 
 
-        speak[0] = "Be one of the first to tap into the power of AWS RoboMaker, click on the SlideShow and Video icons to learn more.";
-        speak[1] = "Here is the RoboMaker schedule. Click on the info button for complete event details.";
-        speak[2] = "The buildings in pink are the RoboMaker venues, I recommend you go to as many events as possible.";
+        speak[0] = "Be one of the first to tap into the power of AWS RowboMaker, click on the SlideShow and Video icons to learn more.";
+        speak[1] = "Here is the RowboMaker schedule. Click on the info button for complete event details.";
+        speak[2] = "The buildings in pink are the RowboMaker venues, I recommend you go to as many events as possible.";
         speak[3] = "Let’s have some robot fun.";
         speak[4] = "Press on an icon to see me in my many customized use cases. What use case can we do together?";
         speak[5] = "I think it would be neat if you rent or buy me. I’m customizable in many awesome ways. Contact us after the show to learn more.";
@@ -240,7 +240,7 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hello, my name is Tracey. Press a button on my screen to learn about AWS RoboMaker.");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Hello, my name is Tracey. Press a button on my screen to learn about AWS RowboMaker.");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
