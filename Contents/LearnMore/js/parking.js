@@ -17,12 +17,33 @@ $(document).click(function(event) {
 $(document).ready(function(){
   
    $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {   
-      $('#dialog-overlay1, #dialog-box1').hide();   
+      $('#dialog-overlay1, #dialog-box1').hide();
+
       return false;
     });
+   $('a.btn-ok').click(function(){
+    $('#dialog-content1').empty();
+   });
+   $('#leanmore').click(function(){
+    location.href="slideshow.html";
+   });
+   
+
+
+
 
 });
-
+var index=1;
+function change(src){
+  index=index+src;
+  if (index<1) {
+      index=21;
+  }
+  else if (index>21) {
+    index=1;
+  }
+  document.getElementById('slide').src="images/"+index+".jpg";
+}
 function ShowPopup(src){
 
 // get the screen height and width  

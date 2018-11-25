@@ -11,15 +11,15 @@
 var speak = new Array( );
 
 
-        speak[0] = "Take a look at our robot at some of our previous trade shows";
-        speak[1] = "hear testimonials from trade show clients";
-        speak[2] = "spin the wheel for your chance to win great prizes";
-        speak[3] = "Read a welcome message from our dean.";
-        speak[4] = "Find out what classes you need for your major.";
-        speak[5] = "";
-        speak[6] = "Say Cheese! ";
-        speak[7] = "Try your luck! spin the slot machine once and try to win a great prize";
-        speak[8] = "Pick a song and let’s boogie!";
+        speak[0] = "Be one of the first to tap into the power of AWS RoboMaker, click on the SlideShow and Video icons to learn more.";
+        speak[1] = "Here is the RoboMaker schedule. Click on the info button for complete event details.";
+        speak[2] = "The buildings in pink are the RoboMaker venues, I recommend you go to as many events as possible.";
+        speak[3] = "Let’s have some robot fun.";
+        speak[4] = "Press on an icon to see me in my many customized use cases. What use case can we do together?";
+        speak[5] = "I think it would be neat if you rent or buy me. I’m customizable in many awesome ways. Contact us after the show to learn more.";
+        speak[6] = "All fruit prizes are digital. Ha, ha. Good luck!";
+        speak[7] = "Pick a song, press the play button, and let’s boogie.";
+        speak[8] = "Smile, you’re about to become a cool robot like me.";
         speak[9] = "Smile! You are about to become a robot.";
 
 //window.external.ChangeLanguage("en-us");
@@ -37,35 +37,36 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../maincontents.htm";
             break;
         case "LearnMore":
-            //PlaySpeech(speak[0]);
+            PlaySpeech(speak[0]);
             location.href = "Contents/LearnMore/index.html";
             break;
         case "Schedule":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Schedule/index.html";
             break;
         case "Maps":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/Maps/index.html";
             break;
+        case "Entertainment":
+            PlaySpeech(speak[3]);
+            location.href = "Contents/Entertainment/index.html";
+            break;
         case "Videos":
-            //PlaySpeech(speak[3]);
+            PlaySpeech(speak[4]);
             location.href = "Contents/Videos/index.html";
             break;
         case "Videos-inner":
-            //PlaySpeech(speak[3]);
+            PlaySpeech(speak[4]);
             location.href = "../../Contents/Videos/index.html";
             break;
-        case "Entertainment":
-            //PlaySpeech(speak[4]);
-            location.href = "Contents/Entertainment/index.html";
-            break;
+        
         case "RentAndBuy":
-            //PlaySpeech(speak[5]);
+            PlaySpeech(speak[5]);
             location.href = "Contents/RentAndBuy/index.html";
             break;
         case "RentAndBuy_inner":
-            //PlaySpeech(speak[5]);
+            PlaySpeech(speak[5]);
             location.href = "../../Contents/RentAndBuy/index.html";
             break;
         
@@ -79,15 +80,15 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/TakePhotos/index.html";
             break;
         case "Slot-machine":
-            //PlaySpeech(speak[7]);
+            PlaySpeech(speak[6]);
             location.href = "../../Contents/SlotMachine/index.html";
             break;
         case "Dance":
-            //PlaySpeech(speak[8]);
+            PlaySpeech(speak[7]);
             location.href = "../../Contents/Dance/index.html";
             break;
         case "Avatar":
-            //PlaySpeech(speak[9]);
+            PlaySpeech(speak[8]);
             location.href = "../../Contents/RobotAvatar/index.htm";
             break;
         case "Config":
@@ -239,25 +240,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hey there, have you seen the Océ Colorado--the hottest roll in town?");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Hello, my name is Tracey. Press a button on my screen to learn about AWS RoboMaker.");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hey would you like to stop babysitting your printer? Then you need to see the Océ Colorado.");
+        window.external.PlaySpeech("I like you, press the Entertainment button and let’s have some fun.");
         
     }
     if(btn_info[2] == '1'){
         window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hi there, my name is Hannah, why don't you take a break and watch one of my videos. Just push the button on my screen!");
+            window.external.PlaySpeech("Hi, press my Entertainment button and I’ll tell you a joke.");
     }
     if(btn_info[3] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hey why don't you take a break, come on in and see our next presentation from Canon See Impossible.");
+        window.external.PlaySpeech("Bye, bye.");
         
     }
     if(btn_info[4] == '1'){

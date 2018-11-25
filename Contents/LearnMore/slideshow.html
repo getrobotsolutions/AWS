@@ -44,43 +44,14 @@
         <div class="col-md-10" style="border: 4px solid white;height: 70px;">Who are you? What do you do? </div>   
     </div>
   <div class="bmg">
-    <h2 class="sub-title"><img src="../../assets/icons/AWS-robomaker.png" style=""> AWS RoboMaker</h2>
+    <!--<h2 class="sub-title"><img src="../../assets/icons/AWS-robomaker.png" style=""> AWS RoboMaker</h2>-->
     <div class="wrap">
-      
-        <div class="main-menu-matrix">
-      
-        <table>
-          <tr>
-            <td>
-              <button onclick="" id="leanmore" style="background-image: url(../../assets/icons/robomaker.png);">
-                    <!--<img src="images/QR_Code_ARS_Contact_Us.png" style="">-->
-                    <a style=""></br></br>Slideshow</a>
-                  </button>
-              
-            </td>
-            <td>
-              <button onclick="ShowPopup('video/AWS_B9_ASSEMBLE_v09.mp4')" style="background-image: url(../../assets/icons/icon-bg-3.png)">
-                <!--<img src="images/QR_Code_ARS_Contact_Information.png" style="">-->
-                <a ></br></br>Video</a>
-              </button>
-            
-        </tr>
-            
-           
-            <tr>
-                <td>
-                    <button onclick="FC_ContentsCall('Videos-inner')" style="background-image: url(../../assets/icons/icon-bg-2.png);padding-top: 5px;" class="icons-2">
-                        <img style="float: left;" src="../../assets/icons/video-camera.png"> 
-                        <a id="txt_shopping">ARS Videos</a>
-                    </button>
-                </td>
-                
-                
-                
-            </tr>
-        </table>
-    </div>
-      
+      <img id="slide" src="images/1.jpg" width="1080">
+        
+        <div style="text-align: center;width: 1080px">    
+            <div class="prev" onclick="change(-1)"><</div>
+            <div class="next" onclick="change(1)">></div>
+        </div>
     </div>
   </div>
 
@@ -106,6 +77,7 @@
     {
         LanguageChange('spanish');
     }
+
 </script>
 
 <script language="JavaScript" type="text/javascript" src="js/parking.js"></script>

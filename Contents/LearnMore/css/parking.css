@@ -162,3 +162,16 @@ p{
   height: 380px;
   padding-top: 20px;
 }
+.prev , .next
+{
+  background-image: linear-gradient(to right top, #4d3aca, #5539c5, #5b39c0, #6038bb, #6538b6);
+  font-size: 150px;
+  background-color: white;
+  color: white;
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+.prev{
+  margin-left:240px; 
+}
